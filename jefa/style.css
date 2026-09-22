@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Georgia', serif;
+}
+
+.card {
+    position: relative;
+    width: 90vw;
+    max-width: 900px;
+    height: 550px;
+    background-color: #fcfbf7;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sunflower-btn {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #f4c430;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.sunflower-btn:hover {
+    transform: scale(1.1);
+}
+
+.sunflower-btn .center {
+    width: 35px;
+    height: 35px;
+    background: #3e2723;
+    border-radius: 50%;
+}
+
+.sunflower-btn .label {
+    position: absolute;
+    white-space: nowrap;
+    right: -75px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.letter {
+    width: 45%;
+    color: #2c2c2c;
+    opacity: 0;
+}
+
+.letter.hidden {
+    display: none;
+}
+
+.letter .title {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.letter .text-body {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    white-space: pre-line;
+    text-transform: uppercase;
+}
+
+.letter .quote {
+    font-size: 13px;
+    color: #555;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.tree-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+#tree-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.ground {
+    stroke: #333;
+    stroke-width: 2;
+}
+
+.branch {
+    fill: none;
+    stroke: #2e5a44;
+    stroke-width: 12;
+    stroke-linecap: round;
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+}
+
+.trunk {
+    stroke-width: 22;
+}
+
+#flowers-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.flower {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffd700;
+    border-radius: 50%;
+    border: 2px solid #3e2723;
+    transform: scale(0);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores Amarillas - Agradecimiento</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+    <div class="card">
+        <div id="start-btn" class="sunflower-btn">
+            <div class="center"></div>
+            <div class="label">Click Aquí</div>
+        </div>
+
+        <div class="stage">
+            <div id="letter" class="letter hidden">
+                <p class="title">🌻 FELIZ DÍA DE LAS FLORES AMARILLAS 🌻</p>
+                <div id="text-body" class="text-body"></div>
+                <p id="quote" class="quote hidden"><i>¡Gracias por su apoyo, liderazgo y valiosa amistad!</i></p>
+            </div>
+
+            <div class="tree-container">
+                <svg id="tree-svg" viewBox="0 0 400 500">
+                    <line class="ground" x1="20" y1="450" x2="380" y2="450" />
+                    <path class="branch trunk" d="M200 450 Q198 350 200 250" />
+                    <path class="branch" d="M200 350 Q170 300 140 270" />
+                    <path class="branch" d="M200 320 Q230 280 260 250" />
+                    <path class="branch" d="M200 280 Q180 230 160 190" />
+                    <path class="branch" d="M200 270 Q220 220 240 180" />
+                </svg>
+                <div id="flowers-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
